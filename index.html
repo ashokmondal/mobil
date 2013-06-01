@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>First Test APP</title>
+	</head>
+	<body>
+	<button id="tryme">Try Me</button>
+	<button id="ClearMe">Clear Me</button>
+	<div id="result"></div>
+	<script type="text/javascript" src="js/zepto.js"></Script>
+	<script type="text/javascript" src="js/tryme.js"></Script>
+	<script>
+	$('#tryme').click(function()
+	{
+	$('#result').html('Good Job!!');
+	TRYME.DoIt($('#result'));
+	});
+	$('#ClearMe').click(function()
+	{
+	$('#result').html('Too clear is NOT clear!');
+	});
+	</script>
+	</body>
+</html>
